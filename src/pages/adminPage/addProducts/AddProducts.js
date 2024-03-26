@@ -1,8 +1,12 @@
 import React from 'react'
+import Layout from '../../../components/layout/Layout'
 
 const AddProducts = () => {
     return (
-        <div>AddProducts</div>
+        <Layout>
+
+            <div>AddProducts</div>
+        </Layout>
     )
 }
 
