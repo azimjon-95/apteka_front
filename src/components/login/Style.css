@@ -1,0 +1,40 @@
+.container {
+    width: 100%;
+    height: 100vh;
+    background: url('../../assets//photo_2024-04-16_08-06-54.jpg') center/cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    padding: 20px;
+}
+
+.container h2 {
+    margin-bottom: 20px;
+    font-size: 30px;
+    font-family: align-items;
+}
+
+.basic {
+    width: 50%;
+    padding: 20px;
+    /* backdrop-filter: blur(6px); */
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.basic label {
+    font-weight: bold;
+}
+
+.basic input,
+.basic button {
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+.basic button {
+    margin-top: 15px;
+}
