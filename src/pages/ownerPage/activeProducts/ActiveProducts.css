@@ -59,14 +59,14 @@
 }
 .costumers{
     width: 45%;
-    height: 100%;
+    height: 95%;
 }
 .costumer{
     width: 85%;
     height: auto;
     background: none;
-    margin-left: 50px;
-    margin-top: 52px;
+    margin-left: 7px;
+    margin-top: 45px;
     border-radius: 5px;
     background: #fff;
     box-shadow: 0 0 5px #adacac;

@@ -11,7 +11,7 @@
 .owner_card-worker{
     width: 300px;
     height: 150px;
-    margin-left: 70px;
+    margin-left: 100px;
     margin-top: 80px;
     background: #fff;
     box-shadow: 0 0 5px #adacac;
@@ -54,4 +54,26 @@ color: rgb(11, 231, 11)
 }
 .card_color svg{
     color: #fff;
+}
+/* Planshetlar va telefonlar uchun chiroyli ko'rinish */
+@media (max-width: 991px) {
+    .owner_card {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
+        justify-items: center;
+    }
+}
+
+/* Telefonlar uchun chiroyli ko'rinish */
+@media (max-width: 767px) {
+    .owner_card {
+        padding: 20px;
+    }
+    .owner_title {
+        font-size: 16px;
+    }
+    .owner_icon {
+        font-size: 24px;
+    }
 }
