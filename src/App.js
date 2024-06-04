@@ -5,7 +5,7 @@ import AddProducts from './pages/adminPage/addProducts/AddProducts';
 import Login from './components/login/Login';
 import ProtectedRoute from './hooks/ProtectedRoute';
 import LayoutWrapper from './components/layout/Layout';
-
+import Royhat from './components/jadval/Royhat'
 const App = () => {
   const [isAuthenticated, setIsAuthenticated] = useState(false);
 
@@ -18,6 +18,7 @@ const App = () => {
 
   return (
     <Routes>
+      
       <Route
         path='/'
         element={isAuthenticated ? <Navigate to="/home" /> : <Login setIsAuthenticated={setIsAuthenticated} />}
@@ -36,6 +37,11 @@ const App = () => {
         />
       </Route>
 
+      <Route
+      path='/royhat'
+      element={<ProtectedRoute isAuthenticated={isAuthenticated} element={<Royhat/>}/>}
+      />
+    
     </Routes>
   );
 };
